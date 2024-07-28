@@ -1,5 +1,5 @@
 {
-    "name": "wanted-solutions/prometheus",
+    "name": "wanted-solutions/laravel-package",
     "description": "Dashboard and code-driven configuration for Laravel queues.",
     "keywords": ["laravel", "queue"],
     "license": "MIT",
@@ -18,21 +18,21 @@
     },
     "autoload": {
         "psr-4": {
-            "Wanted\\Solutions\\Laravel\\Prometheus\\": "src/"
+            "Wanted\\Solutions\\Laravel\\Package\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Wanted\\Solutions\\Laravel\\Prometheus\\Tests\\": "tests/"
+            "Wanted\\Solutions\\Laravel\\Package\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Wanted\\Solutions\\Laravel\\Prometheus\\ServiceProvider"
+                "Wanted\\Solutions\\Laravel\\Package\\ServiceProvider"
             ],
             "aliases": {
-                "WNTD.Prometheus": "Wanted\\Solutions\\Laravel\\Prometheus"
+                "WNTDPackage": "Wanted\\Solutions\\Laravel\\Package\\Facades\\Package"
             }
         }
     },
