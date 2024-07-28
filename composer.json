@@ -1,0 +1,46 @@
+{
+    "name": "wanted-solutions/prometheus",
+    "description": "Dashboard and code-driven configuration for Laravel queues.",
+    "keywords": ["laravel", "queue"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Martin Hrášek",
+            "email": "martin@hrasek.email"
+        }
+    ],
+    "require": {
+        "php": "^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0|^10.4",
+        "predis/predis": "^1.1|^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wanted\\Solutions\\Laravel\\Prometheus\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wanted\\Solutions\\Laravel\\Prometheus\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wanted\\Solutions\\Laravel\\Prometheus\\ServiceProvider"
+            ],
+            "aliases": {
+                "WNTD.Prometheus": "Wanted\\Solutions\\Laravel\\Prometheus"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+    }
+}
