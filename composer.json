@@ -2,13 +2,8 @@
     "name": "wanted-solutions/laravel-package",
     "description": "Dashboard and code-driven configuration for Laravel queues.",
     "keywords": ["laravel", "queue"],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Martin Hrášek",
-            "email": "martin@hrasek.email"
-        }
-    ],
+    "license": "Apache-2.0",
+    "authors": [],
     "require": {
         "php": "^8.0"
     },
